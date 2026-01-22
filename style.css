@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  background-color: hsl(0, 0%, 8%);
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: hsl(0, 0%, 12%);
+  height: 80%;
+  width: 30%;
+  border-radius: 10px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  padding-top: 1em;
+}
+.info-box {
+  line-height: 0.6;
+}
+
+.info-box h2 {
+  font-weight: bold;
+}
+.info-box span {
+  color: hsl(75, 94%, 57%);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.words-box {
+  font-size: 14px;
+}
+
+.btns-box {
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: hsl(0, 0%, 20%);
+  margin: 0.8em;
+  padding: 0.8em;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.btn:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: 80%;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 70%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .avatar {
+    border-radius: 50%;
+    width: 100px;
+    padding-top: 1em;
+  }
+  .info-box {
+    font-size: 0.8em;
+  }
+  .words-box {
+    font-size: 11px;
+  }
+
+  .btns-box {
+    font-size: 15px;
+  }
+}
